@@ -23,7 +23,7 @@ function NameList() {
             skill: "EmberJs"
         }
     ]
-    const personList = persons.map(({ name, age, skill }) => <h1>I am {name}, i am {age} and i know {skill}</h1>)
+    const personList = persons.map(({ name, age, skill }) => <h1 key={name}>I am {name}, i am {age} and i know {skill}</h1>)
     return (
         <div>
             {
